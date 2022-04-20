@@ -38,11 +38,11 @@ class MessageList extends Component {
             this.list = list;
           }}
         >
-          {/* {this.props.messages.map((message) => {
+          {this.props.messages.map((message) => {
             return <Message key={message.id} message={message} />;
-          })} */}
+          })}
         </div>
-        {/* <MessageForm /> */}
+        <MessageForm />
       </div>
     );
   }
