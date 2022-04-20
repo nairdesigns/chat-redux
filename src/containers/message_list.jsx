@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
-import { fetchMessages } from "../actions";
-
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
+import { fetchMessages } from "../actions";
 
 class MessageList extends Component {
   componentWillMount() {
