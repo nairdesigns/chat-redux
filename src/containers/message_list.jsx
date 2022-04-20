@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
+import { fetchMessages } from "../actions";
+
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
@@ -35,11 +37,11 @@ class MessageList extends Component {
             this.list = list;
           }}
         >
-          {this.props.messages.map((message) => {
+          {/* {this.props.messages.map((message) => {
             return <Message key={message.id} message={message} />;
-          })}
+          })} */}
         </div>
-        <MessageForm />
+        {/* <MessageForm /> */}
       </div>
     );
   }
