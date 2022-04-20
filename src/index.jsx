@@ -2,7 +2,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, combineReducers } from "redux";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import reduxPromise from "redux-promise";
 
 // internal modules
 import App from "./components/app";
@@ -27,6 +28,8 @@ const initialState = {
     },
   ],
 };
+const middlewares = applyMiddleware(reduxPromise, logger);
+const store = createStore(reducers, initialState);
 
 // render an instance of the component in the DOM
 ReactDOM.render(
