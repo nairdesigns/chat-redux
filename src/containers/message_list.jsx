@@ -50,7 +50,7 @@ class MessageList extends Component {
 
 function mapStateToProps(state) {
   return {
-    message: state.message,
+    message: state.messages,
     selectedChannel: state.selectedChannel,
   };
 }
