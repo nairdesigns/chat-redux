@@ -8,7 +8,6 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import logger from "redux-logger";
 import reduxPromise from "redux-promise";
 
-// internal modules
 import App from "./components/app";
 import "../assets/stylesheets/application.scss";
 
@@ -23,6 +22,7 @@ const initialState = {
   channels: ["general", "react", "paris"],
   currentUser:
     prompt("What is your username?") ||
+    // eslint-disable-next-line no-mixed-operators
     `anonymous${Math.floor(10 + Math.random() * 90)}`,
   selectedChannel: "general",
 };

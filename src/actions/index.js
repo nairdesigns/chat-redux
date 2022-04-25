@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 const BASE_URL = "https://wagon-chat.herokuapp.com";
 
 export const FETCH_MESSAGES = "FETCH_MESSAGES";
