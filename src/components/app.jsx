@@ -1,12 +1,15 @@
 import React from "react";
 import MessageList from "../containers/message_list";
+import ChannelList from "../containers/channel_list";
 
 const App = () => {
   return (
     <div className="app">
-      <p>React + Redux starter</p>
-
-      <MessageList />
+      <div className="row">
+        <div className="col-1 ">put logo here</div>
+        <ChannelList />
+        <MessageList />
+      </div>
     </div>
   );
 };
