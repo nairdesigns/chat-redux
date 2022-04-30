@@ -40,6 +40,6 @@
     "start": "webpack-dev-server --mode development",
     "lint": "eslint './src/**/*.js' './src/**/*.jsx'",
     "deploy": "webpack -p && gh-pages -d dist",
-    "heroku-prebuild": "npm install --dev"
+    "heroku-prebuild": "yarn install --dev"
   }
 }
