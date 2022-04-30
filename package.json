@@ -43,6 +43,19 @@
     "start": "webpack-dev-server --mode development",
     "lint": "eslint './src/**/*.js' './src/**/*.jsx'",
     "deploy": "webpack -p && gh-pages -d dist",
-    "heroku-prebuild": "yarn install --dev"
-  }
+    "heroku-prebuild": "npm install --dev"
+  },
+  "name": "chat-redux",
+  "description": "Simple React + Redux starter with the following config:",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nairdesigns/chat-redux.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/nairdesigns/chat-redux/issues"
+  },
+  "homepage": "https://github.com/nairdesigns/chat-redux#readme"
 }
