@@ -28,21 +28,23 @@ class MessageList extends Component {
   };
   render() {
     return (
-      <div className="channel-container p-4 col">
-        <div className="channel-title">
+      <div className="col channel-title p-4">
+        <div className="row">
           <span>Channel #{this.props.selectedChannel}</span>
         </div>
-        <div
-          className="channel-content"
-          ref={(list) => {
-            this.list = list;
-          }}
-        >
-          {this.props.messages.map((message) => {
-            return <Message key={message.id} message={message} />;
-          })}
+        <div className="channel-container row">
+          <div
+            className="channel-content"
+            ref={(list) => {
+              this.list = list;
+            }}
+          >
+            {this.props.messages.map((message) => {
+              return <Message key={message.id} message={message} />;
+            })}
+          </div>
+          <MessageForm />
         </div>
-        <MessageForm />
       </div>
     );
   }
