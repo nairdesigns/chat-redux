@@ -13,11 +13,12 @@ body {
 .channel-container {
   height: 100vh;
   display: inline-block;
-  align-items: flex-end;
   max-width: 100vh;
 }
 .channel-editor {
   min-width: 100vh;
+  position: absolute;
+  bottom: 0px;
 }
 
 .channel-content {
