@@ -28,8 +28,8 @@ class MessageList extends Component {
   };
   render() {
     return (
-      <div className="col channel-title p-4">
-        <div className="row">
+      <div className="col chat-box p-4">
+        <div className="row channel-title pb-4">
           <span>Channel #{this.props.selectedChannel}</span>
         </div>
         <div className="channel-container row">

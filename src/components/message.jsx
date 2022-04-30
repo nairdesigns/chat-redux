@@ -1,4 +1,4 @@
-/* eslint-disable no-bitwise */
+/* eslint-disable no-bitwise sre*/
 import React from "react";
 import { emojify } from "react-emojione";
 
