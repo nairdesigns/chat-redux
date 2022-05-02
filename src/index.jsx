@@ -38,7 +38,7 @@ const reducers = combineReducers({
 const middleware = applyMiddleware(reduxPromise, logger);
 const store = createStore(reducers, initialState, middleware);
 
-// render an instance of the component in the DOM
+// render an instance of the component in the DOMtest
 ReactDOM.render(
   <Provider store={store}>
     <App />
