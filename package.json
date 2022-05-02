@@ -44,7 +44,7 @@
     "lint": "eslint './src/**/*.js' './src/**/*.jsx'",
     "deploy": "webpack -p && gh-pages -d dist",
     "heroku-prebuild": "npm install --dev",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "npm install --only=dev && npm install && npm run build"
   },
   "name": "chat-redux",
   "description": "Simple React + Redux starter with the following config:",
