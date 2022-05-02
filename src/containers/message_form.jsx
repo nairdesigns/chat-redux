@@ -24,7 +24,7 @@ class MessageForm extends Component {
       this.props.currentUser,
       this.state.value
     );
-    this.setState({ value: "" }); // Reset message input
+    this.setState({ value: "" }); // Reset message inputtest
   };
 
   render() {
