@@ -21,7 +21,7 @@ const initialState = {
   messages: [],
   channels: ["general", "react", "paris"],
   currentUser:
-    // prompt("What is your username?") ||
+    // prompt("What is your username?") ||s
     // eslint-disable-next-line no-mixed-operators
     `anonymous${Math.floor(10 + Math.random() * 90)}`,
   selectedChannel: "general",
