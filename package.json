@@ -3,6 +3,9 @@
   "engines": {
     "node": "14.17.5"
   },
+  "optionalDependencies": {
+    "fsevents": "2.1.2"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.0",
